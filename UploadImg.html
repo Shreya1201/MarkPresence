@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Upload</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+<label for="menu-icon"></label>
+<nav class="nav">
+    <ul class="pt-5">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+<body class="login-page">
+    <main>
+        <div class="login-block">
+            <h1>Enter Employee Details</h1>
+            <div id="content">
+                <form method="POST" action="UploadImg.py" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div class="input-group">
+                            Upload Picture <input type="file" name="filename" value="" />
+                        </div>
+                    </div>
+                    <hr class="hr-xs">
+                    <hr class="hr-xs">
+                    <button class="btn btn-primary btn-block" type="submit" name="upload" value="upload">UPLOAD</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
